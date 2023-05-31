@@ -1,0 +1,23 @@
+2B
+req. docker. node.js, wsl
+installation steps
+> on docker terminal search docker --version
+> install node.js for displaying
+> install docker from microsoft on vs
+> import folder in vs
+> name folder with lowercase only part b
+> inside part b add file 'Docker'
+> create file index.js
+> colsol.log("Name: GK")
+  colsol.log("Class: TE")
+  colsol.log("Subject: WAD")
+  colsol.log("Assignment: 2B")
+> in js file write
+  FROM node:alpine
+  COPY . /part b
+  CMD node /part b/index.js
+> open terminal in vs
+> docker --version
+> node index.js the content will be displayed
+> docker build -t part b .
+> docker images

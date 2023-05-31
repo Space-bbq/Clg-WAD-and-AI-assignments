@@ -1,0 +1,375 @@
+npm init -> description: static -> y -> 
+create index.js file -> npm i express --save
+-> 
+const express = require('express');
+const app = express(); -> create a public folder ->
+create index.html file -> 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/vendors/icons.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Static Website</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.svg"> 
+    </div>
+    <div class="login-info">
+      <div class="welcome"><span class="welcome-span">Welcome</span><span class="name">NAYANA S</span></div>
+      <span class="logout-line"></span>
+      <div class="logout">
+        <i aria-hidden="true" class="icon-logout"></i> <span>LOGOUT</span>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="side-menu">
+      <ul class="list-group">
+        <li class="list-group-item"><i aria-hidden="true" class="icon-icon"></i> <span>DASHBOARD</span></li>
+        <li class="list-group-item"><i aria-hidden="true" class="icon-avatar"></i> <span>MY ACCOUNT</span></li>
+        <li class="list-group-item"><i aria-hidden="true" class="icon-settings"></i> <span>SETTINGS</span></li>
+      </ul>
+    </div>
+    <div class="dashboard-container">
+      <div class="action-container">
+        <span>DASHBOARD</span>
+        <div class="btn-container">
+          <button type="button" class="btn btn-primary">Sign In</button>
+          <a href='registration.html'>
+            <button class="btn btn-primary">
+                Register
+            </button>
+        </a>
+        </div>
+      </div>
+      <div class="table-container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="blue card">
+              <i aria-hidden="true" class="icon-piggy-bank"></i>
+              <div class="summary-container">
+                <span class="percentage">28%</span>
+                <span class="summary">SUMMARY</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="violet card">
+              <i aria-hidden="true" class="icon-analytics"></i>
+              <div class="summary-container">
+                <span class="percentage">54%</span>
+                <span class="summary">SUMMARY</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="purple card">
+              <i aria-hidden="true" class="icon-team"></i>
+              <div class="summary-container">
+                <span class="percentage">76%</span>
+                <span class="summary">SUMMARY</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="pink card">
+              <i aria-hidden="true" class="icon-money"></i>
+              <div class="summary-container">
+                <span class="percentage">37%</span>
+                <span class="summary">SUMMARY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="table-div">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col">
+            <div class="table-div">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+----add css----
+header {
+    width: 100%;
+    height: 70px;   
+    background-image: linear-gradient(to right, #082456 , #1044AA);
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+header .logo img{
+    height: 60%;    
+    margin-top: 14px;
+    margin-left: 20px;
+}
+header .login-info
+{
+    color: #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    min-width: 25%;
+}
+header .login-info .logout-line{
+    border-left: 1px solid #8CA0CD;
+    height: 100%;
+}
+header .login-info .welcome .welcome-span{
+    color: #8CA0CD;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 6px;
+}
+header .login-info .welcome .name{
+    font-weight: 700;
+    font-size: 16px;
+}
+header .login-info .logout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+header .login-info .logout i{
+    font-size: 28px;
+    color: #8CA0CD;
+    margin-right: 25px;
+}
+.container-fluid{
+height: 700px;
+padding: 0px;
+display: flex;
+}
+.container-fluid .side-menu{
+    width: 270px;
+    height: 100%;   
+}
+.container-fluid .side-menu .list-group .list-group-item 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.container-fluid .side-menu .list-group .list-group-item i{
+    font-size: 28px;
+    color: #c8c0c0;
+}
+.container-fluid .side-menu .list-group .list-group-item span{
+    color: #909090;
+    font-weight: 700;
+    font-size: 13px;
+    padding-left: 15px
+}
+
+.container-fluid .dashboard-container{
+    width: calc(100% - 250px);
+    height: 100%;  
+}
+.container-fluid .dashboard-container .action-container{
+    height: 70px;
+    background-color: #F7F7F7;
+    padding-right: 35px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-fluid .dashboard-container .action-container span{
+    font-weight: bold;
+    color: #1D3057;
+    font-size: 18px;
+}
+.container-fluid .dashboard-container .action-container .btn-container button
+{
+    background-color: #0F43A9;
+    font-size: 15px;
+    padding: 8px 25px 8px 25px;
+    font-weight: 600;
+    color:#E8E8E8;
+}
+.container-fluid .dashboard-container .table-container{
+    background-color: #E7E7E7;
+    height: calc(100% - 70px);
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 30px;
+}
+.container-fluid .dashboard-container .table-container .card{    
+    height: 150px;   
+    padding: 20px;  
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    border: none;   
+    line-height: 1;
+}
+.container-fluid .dashboard-container .table-container .card i{    
+    font-size: 7vw;
+}
+.container-fluid .dashboard-container .table-container .card .summary-container{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.container-fluid .dashboard-container .table-container .card .summary-container .percentage{
+    font-size: 3vw;
+    font-weight: bold;
+}
+/* .container-fluid .dashboard-container .table-container .card .summary-container .summary{
+
+} */
+.blue{
+   background-color: #3783D7;
+}
+.violet{
+    background-color: #7E58BD;
+}
+.purple{
+background-color: #D988D4;
+}
+
+.pink{
+background-color: #DE5383;
+}
+.container-fluid .dashboard-container .table-container .row .table-div{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: auto;
+}
+
+----add form----
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form action="">
+
+        <h1>Registration Form</h1>
+
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" required></p>
+        <fieldset>
+        <legend>Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="Male" required>
+            Female <input type="radio" name="gender" id="Female" required>
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="90" rows="8"></textarea></p>
+        <p>Email: * <input type="email" name="email" id="email" required></p>
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+    </form>
+</body>
+</html>
+-> in index.js write -> 
+app.use(express.static('public'));
+
+app.listen(3000, () => {
+    console.log('Application is started');
+}) -> go to terminal -> node index.js -> go to browser write localhost:3000

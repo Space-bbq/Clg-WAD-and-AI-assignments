@@ -1,0 +1,92 @@
+4A
+create a folder -> inside it index.html -> add jquery cdn links -> jquery mobile -> downloads -> copy links -> paste in head -> add navbar widgets para and footer with links ->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="header" data-theme="b">
+        <h1>Marine</h1>
+    </div>
+    <div data-role="navbar" data-grid="c">
+        <ul>
+            <li><a href="index.html" class="ui-btn-active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <center>
+    <h3 style="padding-top:10px;">General Information</h3>
+    
+    <p style="padding:5px 20px 5px 20px;">jQuery Mobile is a touch-optimized web framework, specifically a JavaScript library, developed by the jQuery project team. The development focuses on creating a framework compatible with many smartphones and tablet computers, made necessary by the growing but heterogeneous tablet and smartphone market.</p>
+    </center>
+    
+    <div data-role="footer" data-theme="b">
+        <center>
+        <div id="quicklinks" style="padding-bottom: 25px;">
+            <h3>Quicklinks</h3>
+            <a href="#">Home</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">Products</a><br>
+            <a href="#">Login</a><br>
+        </div>
+        </center>
+    </div>
+</body>
+</html>
+
+----login form----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="header" data-theme="b">
+        <h1>Home</h1>
+    </div>
+    <div data-role="navbar" data-grid="c">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="Login.html" class="ui-btn-active">Login</a></li>
+        </ul>
+    </div>
+
+    <form action="">
+        <center>
+        <h1>Login Form</h1>
+        </center>
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" required></p>
+        <fieldset>
+        <legend>Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="Male" required>
+            Female <input type="radio" name="gender" id="Female" required>
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="90" rows="8"></textarea></p>
+        <p>Email: * <input type="email" name="email" id="email" required></p>
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+    </form>
+</body>
+</html> 
+

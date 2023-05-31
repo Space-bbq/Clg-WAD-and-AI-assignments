@@ -1,0 +1,12 @@
+2A
+git --version
+mkdir Part-A -> make a txt file and wrtite smthg in it
+cd Part-A -> make github reposi
+git init
+git add .
+git status
+git remote add origin "reposi link"
+git config -- global user.email "email.com"
+git config --global user.name "username"
+git commit -m "changes made"
+git push -u origin master
